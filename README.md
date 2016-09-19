@@ -4,7 +4,7 @@ Real-time Forms with Phoenix and Websockets
 This is a little experiment that shows how to use [Phoenixframework](http://www.phoenixframework.org)
 for realtime forms via websockets. 
 
-![Emomon Demo](/priv/emomon.gif?raw=true "Emomon Demo Animgif")
+![Emomon Demo](priv/emomon.gif?raw=true "Emomon Demo Animgif")
 
 An interesting approach to saving state of a small app is the self-saving [GenServer](http://elixir-lang.org/getting-started/mix-otp/genserver.html)
 - certainly not for terabytes of data, but for some small collections of values, why not?
