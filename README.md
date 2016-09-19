@@ -7,7 +7,7 @@ for realtime forms via websockets.
 ![Emomon Demo](priv/emomon.gif?raw=true "Emomon Demo Animgif")
 
 An interesting approach to saving state of a small app is the self-saving [GenServer](http://elixir-lang.org/getting-started/mix-otp/genserver.html)
-- certainly not for terabytes of data, but for some small collections of values, why not?
+Certainly not good for terabytes of data, but for some small collections of values, why not?
 
 
 To start this Phoenix app:
