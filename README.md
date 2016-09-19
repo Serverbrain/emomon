@@ -9,6 +9,9 @@ for realtime forms via websockets.
 An interesting approach to saving state of a small app is the self-saving [GenServer](http://elixir-lang.org/getting-started/mix-otp/genserver.html).
 Certainly not good for terabytes of data, but for some small collections of values, why not?
 
+For a limited time you can see a live demo [here](http://emomon.serverbrain.com/). Open it in multiple browser windows!
+
+Of course in a real-world app you would add some auth and a watchdog for max store size etc. 
 
 To start this Phoenix app:
 
