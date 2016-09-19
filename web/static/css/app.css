@@ -1,0 +1,13 @@
+/* EMOMON VALUES */
+.emo-value   { padding-left: 30px; font-size: 1.2em; }
+.emo-value-b { padding-left: 30px; font-size: 1.2em; font-weight: bold; }
+
+#Item { font-size: 4em; font-weight: bold; }
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+input:focus, input:active:focus, input.active:focus {
+    outline: 0 none;
+}

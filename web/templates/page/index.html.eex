@@ -1,0 +1,36 @@
+
+<noscript><div class="col text-center"><h1>Hey, sorry, but you need to activate JavaScript for this to work!</h1></div></noscript>
+
+<div class="row text-center">
+  <h3><%= gettext "Share your emotions about:" %></h3>
+  <div id="Item">Phoenix</div>
+  <p class="lead"><%= gettext "How do you feel about this?" %></p>
+  <p><button id="changeItem" type="button" class="btn btn-default"><%= gettext "LOAD NEW ITEM!" %></button></p>
+  <p style="margin-top:20px; margin-bottom:0px"><%= gettext "Please use the slider to inform the world about your emotions!" %></p>
+</div>
+
+<div class="row marketing">
+  <div class="col-xs-12">
+
+    <p><input id="emometer-input" type="range"  min="1" max="10" onInput="EmoSetValue(this.value)" /></p>
+
+    <p><b>YOUR EMOTION:</b><span id="emovalue-local" class="emo-value-b">0</span></p>
+    <p><meter id="emometer-local" style="width:100%" min="1" max="11" low="3" high="8" optimum="10" value="5"></meter></p>
+
+    <p><b>WORLD EMOTION AVERAGE:</b><span id="emovalue-world-avg" class="emo-value-b">0</span></p>
+    <p><meter id="emometer-world-avg" style="width:100%" min="1" max="11" low="3" high="8" optimum="10" value="8"></meter></p>
+
+    <p>WORLD EMOTION MINIMUM:<span id="emovalue-world-min" class="emo-value">0</span></p>
+    <p><meter id="emometer-world-min" style="width:100%" min="1" max="11" low="3" high="8" optimum="10" value="2"></meter></p>
+
+    <p>WORLD EMOTION MAXIMUM:<span id="emovalue-world-max" class="emo-value">0</span></p>
+    <p><meter id="emometer-world-max" style="width:100%" min="1" max="11" low="3" high="8" optimum="10" value="10"></meter></p>
+
+  </div>
+</div>
+
+<script>
+function EmoSetValue(value) {
+  document.getElementById("emovalue-local").innerHTML = value;
+  document.getElementById("emometer-local").value = ++value; }
+</script>
